@@ -19,7 +19,10 @@ g.noh = true
 g.hidden = true
 
 -- No wrap text
-g.nowrap = true
+-- opt.wrap = false
+opt.wrap = false
+opt.linebreak = true
+opt.list = false
 opt.wm = 80
 
 -- Add offset when scrolling
