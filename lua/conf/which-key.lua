@@ -16,6 +16,15 @@ local leader_opts = {
 	nowait = true,
 }
 
+local fterm_opts = {
+	mode = "t",
+	prefix = "",
+	buffer = nil,
+	silent = false,
+	noremap = true,
+	nowait = true,
+}
+
 local opts = {
 	silent = false,
 	noremap = true,
@@ -32,6 +41,9 @@ local mappings = {
 
 	-- Hop Keybindings
 	["h"] = { "<cmd>:HopWord<CR>", "HopWord" },
+
+	-- Toggle FTerm
+	["i"] = { "<cmd>:lua require('FTerm').toggle()<CR>", "FTerm Toggle" },
 }
 
 -- Tree keybindings
@@ -59,6 +71,12 @@ local buffer_mappings = {
 	["<S-x>"] = { "<cmd>:BufferClose<CR>", "BufferClose" },
 }
 
+-- FTerm Keybindings
+local fterm_mappings = {
+	-- Toggle FTerm
+	["<C-i>"] = { "<cmd>:lua require('FTerm').toggle()<CR>", "FTerm Toggle" },
+}
+
 -- Setup WhichKey
 whichkey.setup(conf)
 
@@ -70,3 +88,6 @@ whichkey.register(tree_mappings, opts)
 
 -- Register NVIM Buffer mappings
 whichkey.register(buffer_mappings, opts)
+
+-- Register FTerm Mappings
+whichkey.register(fterm_mappings, fterm_opts)

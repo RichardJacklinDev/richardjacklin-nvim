@@ -3,16 +3,19 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- Theme (Moonlight.nvim)
-  -- use("shaunsingh/moonlight.nvim")
+	use("shaunsingh/moonlight.nvim")
 
-  -- Theme (Tokyonight.nvim)
-  use('folke/tokyonight.nvim')
+	-- Theme (Tokyonight.nvim)
+	use("folke/tokyonight.nvim")
 
-  -- Theme (Material.nvim)
-  -- use('marko-cerovac/material.nvim')
-  
-  -- Theme (Gruvbox.nvim)
-  -- use("ellisonleao/gruvbox.nvim") 
+	-- Theme (Material.nvim)
+	use("marko-cerovac/material.nvim")
+
+	-- Theme (Gruvbox.nvim)
+	use("ellisonleao/gruvbox.nvim")
+
+	-- Theme (Kanagawa)
+	use("rebelot/kanagawa.nvim")
 
 	-- Null ls (Formatting)
 	use({
@@ -102,4 +105,7 @@ return require("packer").startup(function(use)
 
 	-- NERD Commentor
 	use("preservim/nerdcommenter")
+
+	-- FTerm
+	use("numToStr/FTerm.nvim")
 end)

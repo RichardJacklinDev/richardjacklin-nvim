@@ -19,7 +19,7 @@ g.noh = true
 g.hidden = true
 
 -- No wrap text
--- g.nowrap = true
+g.nowrap = true
 opt.wm = 80
 
 -- Add offset when scrolling
@@ -56,7 +56,7 @@ opt.signcolumn = "yes"
 
 -- Tokyonight Theme
 -- g.colorscheme = "tokyonight"
-vim.cmd("colorscheme tokyonight-night")
+-- vim.cmd("colorscheme tokyonight-night")
 
 -- Material Theme
 -- vim.g.material_style = "deep ocean"
@@ -70,4 +70,11 @@ vim.cmd("let g:NERDSpaceDelims = 1")
 -- COMMANDS --
 --------------
 -- Format on Save
--- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+
+------------------
+-- CHECK HEALTH --
+------------------
+g.loaded_ruby_provider = 0
+g.loaded_perl_provider = 0
+g.python3_host_prog = "/usr/bin/python3.8"

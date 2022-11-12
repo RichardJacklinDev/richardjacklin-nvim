@@ -4,7 +4,8 @@ require("plugins")
 -- Colourscheme:
 -- require("conf/themes/material")
 -- require("conf/themes/gruvbox")
-require("conf/themes/tokyonight")
+-- require("conf/themes/tokyonight")
+require("conf/themes/kanagawa")
 
 -- Setup inital vim options
 require("options")
@@ -16,7 +17,7 @@ require("options")
 -- MASON + LSPCONFIG
 require("conf/mason")
 require("conf/mason-lspconfig")
-require("conf/lspconfig")
+-- require("conf/lspconfig")
 
 -- NULL LS (FORMATTING)
 require("conf/null-ls")
@@ -41,3 +42,6 @@ require("conf/lualine")
 
 -- BARBAR
 require("conf/barbar")
+
+-- FTerm
+require("conf/fterm")
